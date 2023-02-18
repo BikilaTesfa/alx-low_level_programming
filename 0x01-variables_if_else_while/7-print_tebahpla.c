@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-int i;
-for (i = 48; i <= 57; i++)
+char alphabet;
+for (alphabet = 122; alphabet >= 97; alphabet--)
 {
-putchar(i);
+putchar(alphabet);
 }
 putchar('\n');
 return (0);
