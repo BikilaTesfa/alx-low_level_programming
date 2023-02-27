@@ -1,20 +1,14 @@
 #include "main.h"
-
 /**
- * _strlen - calculate the length of a string.
- *
- * @s: the string to calculate it's length.
- * Return: length of a string.
+ * swap_int - swap the value of two ntegers.
+ * @a: first integer.
+ * @b: second integer.
  */
-
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int i;
-	int length = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		length++;
-	}
-	return (length);
+int c;
+c = 0;
+c = *a;
+*a = *b;
+*b = c;
 }
