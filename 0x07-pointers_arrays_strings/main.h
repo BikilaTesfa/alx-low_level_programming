@@ -9,5 +9,6 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 int _putchar(char c);
 void set_string(char **s, char *to);
+int main(void);
 #define main
 #endif
