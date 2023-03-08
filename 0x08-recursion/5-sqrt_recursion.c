@@ -4,7 +4,7 @@ int fakefake(int n, int s);
 
 /**
  * _sqrt_recursion - get the natural square root of a number
- * @n: is the natural number
+ * @n: is the Natural number
  * Return: The natural square root
  */
 
