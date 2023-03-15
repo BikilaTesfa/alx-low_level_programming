@@ -31,7 +31,21 @@ int word_len(char *str)
  * Return: pointer to an array of strings
  * address of the newly allocated memory
  */
-
+int count_words(char *str)
+{
+	int index = 0, words = 0, len = 0;
+	for (index = 0; *(str + index); index++)
+		len++;
+	for (index = 0; index < len; index++)
+	{
+		if (*(str + index) != ' ')
+		{
+			words++;
+			index += word_len(str + index);
+		}
+	}
+	return (words);
+}
 char **strtow(char *str)
 {
 	int i, j, k = 0, l, m, count = 0, len;
